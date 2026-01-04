@@ -1,14 +1,42 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Avcılar Elektrikçi | YGT Elektrik (7/24 Acil)</title>
-  <meta name="description" content="Avcılar elektrikçi hizmeti. 7/24 acil elektrik arıza, tesisat, pano, kamera ve yangın alarm sistemleri. YGT Elektrik.">
+  <meta name="description" content="Avcılar elektrikçi: 7/24 acil arıza, tesisat, pano, kaçak akım, topraklama, kamera ve yangın alarm sistemleri. Hemen ara: 0544 362 70 08" />
+  <link rel="canonical" href="https://yigitkemalibis-creator.github.io/ygtelektrik/avcilar.html" />
 
-  <link rel="canonical" href="https://yigitkemalibis-creator.github.io/ygtelektrik/avcilar.html">
-  <link rel="stylesheet" href="style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Avcılar Elektrikçi | YGT Elektrik (7/24 Acil)" />
+  <meta property="og:description" content="Avcılar genelinde 7/24 acil elektrikçi. Arıza, tesisat, pano, kamera ve yangın alarm. Hemen ara: 0544 362 70 08" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Electrician",
+    "name":"YGT Elektrik",
+    "url":"https://yigitkemalibis-creator.github.io/ygtelektrik/",
+    "telephone":"+905443627008",
+    "areaServed":[{"@type":"AdministrativeArea","name":"İstanbul"},{"@type":"Place","name":"Avcılar"}],
+    "serviceType":[
+      "Acil Elektrikçi",
+      "Elektrik Arıza",
+      "Elektrik Tesisatı",
+      "Pano İşleri",
+      "Topraklama",
+      "Kamera Sistemleri",
+      "Yangın Alarm Sistemleri"
+    ],
+    "openingHours":"Mo-Su 00:00-23:59"
+  }
+  </script>
 </head>
 
 <body>
@@ -29,25 +57,109 @@
   </div>
 </header>
 
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="pill">Avcılar • 7/24 Acil Servis</div>
+      <h1>Avcılar Elektrikçi – 7/24 Acil Müdahale</h1>
+      <p class="lead">
+        Avcılar’ın tüm mahallelerinde elektrik arıza, sigorta atması, kaçak akım, pano işleri,
+        tesisat ve tadilat için hızlı çözüm. Kamera ve yangın alarm sistemlerinde de kurulum & bakım yapıyoruz.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="tel:+905443627008">📞 Hemen Ara: 0544 362 70 08</a>
+        <a class="btn success" target="_blank"
+           href="https://wa.me/905443627008?text=Merhaba%2C%20Avc%C4%B1lar%E2%80%99da%20acil%20elektrik%20hizmeti%20laz%C4%B1m.%20%C4%B0htiyac%C4%B1m%3A%20">WhatsApp’tan Yaz</a>
+      </div>
+
+      <div class="cards mini">
+        <div class="card"><div class="card-title">7/24 Acil</div><div class="card-text">Gece-gündüz hızlı dönüş</div></div>
+        <div class="card"><div class="card-title">Avcılar Tümü</div><div class="card-text">Tüm mahallelere servis</div></div>
+        <div class="card"><div class="card-title">Uzman Kadro</div><div class="card-text">Temiz işçilik, doğru çözüm</div></div>
+      </div>
+    </div>
+
+    <aside class="quote">
+      <h2>Hızlı Teklif / Keşif</h2>
+      <p>Adres göstermiyoruz; Avcılar’da hizmet veriyoruz. Yaz, hemen dönüş yapalım.</p>
+
+      <form onsubmit="event.preventDefault(); sendWhatsApp();">
+        <label>İsim</label>
+        <input id="qName" placeholder="Ad Soyad" />
+
+        <label>Mahalle</label>
+        <input id="qArea" placeholder="Örn: Merkez, Cihangir, Firuzköy..." />
+
+        <label>İhtiyaç</label>
+        <textarea id="qNeed" rows="4" placeholder="Arıza / tesisat / pano / kamera / yangın alarm..."></textarea>
+
+        <button class="btn primary" type="submit">WhatsApp’a Gönder</button>
+        <small>Butona basınca WhatsApp mesajı hazırlanır.</small>
+      </form>
+    </aside>
+  </div>
+</section>
+
 <main class="container">
-  <h1>Avcılar Elektrikçi – 7/24 Acil Servis</h1>
+  <h2 id="hizmetler">Avcılar’da Hizmetlerimiz</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-title">Elektrik Arıza (7/24)</div>
+      <div class="card-text">Sigorta atması, priz/anahtar sorunları, kısa devre, kaçak akım.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Elektrik Tesisatı & Tadilat</div>
+      <div class="card-text">Daire, ofis, mağaza ve iş yerlerinde yenileme, hat çekimi, aydınlatma.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Pano • Topraklama</div>
+      <div class="card-text">Pano düzenleme, kaçak akım rölesi, topraklama kontrol ve iyileştirme.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Kamera Sistemleri</div>
+      <div class="card-text">Kurulum, bakım, görüntüleme altyapısı, kayıt cihazı ve ağ düzeni.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Yangın Alarm</div>
+      <div class="card-text">Algılama, siren, panel kurulumu ve periyodik bakım çözümleri.</div>
+    </div>
+  </div>
 
-  <p>
-    Avcılar genelinde <strong>7/24 acil elektrikçi</strong> hizmeti veriyoruz.
-    Elektrik arızası, sigorta atması, kaçak akım, pano işleri, tesisat,
-    kamera ve yangın alarm sistemleri için hızlı ve güvenilir çözüm.
-  </p>
+  <h2>Avcılar Mahalleleri</h2>
+  <p class="muted">Google’a “mahalle + elektrikçi” aramalarında yakalanmak için ekledik.</p>
+  <div class="tags">
+    <span class="tag">Merkez</span><span class="tag">Cihangir</span><span class="tag">Firuzköy</span>
+    <span class="tag">Gümüşpala</span><span class="tag">Denizköşkler</span><span class="tag">Ambarlı</span>
+    <span class="tag">Tahtakale</span><span class="tag">Mustafa Kemal Paşa</span><span class="tag">Üniversite</span>
+    <span class="tag">Yeşilkent</span>
+  </div>
 
-  <ul>
-    <li>7/24 Acil Elektrikçi</li>
-    <li>Elektrik Arıza & Tesisat</li>
-    <li>Pano ve Topraklama</li>
-    <li>Kamera & Yangın Alarm Sistemleri</li>
-  </ul>
-
-  <a class="btn primary" href="tel:+905443627008">
-    📞 Hemen Ara: 0544 362 70 08
-  </a>
+  <section id="iletisim" class="cta-wide">
+    <h2>Avcılar Elektrikçi – Hemen Ulaş</h2>
+    <p>7/24 acil servis. Arıza/tadilat/pano/kamera/yangın alarm için hızlı dönüş.</p>
+    <div class="cta">
+      <a class="btn primary" href="tel:+905443627008">📞 0544 362 70 08</a>
+      <a class="btn success" target="_blank"
+         href="https://wa.me/905443627008?text=Merhaba%2C%20Avc%C4%B1lar%E2%80%99da%20elektrik%20hizmeti%20laz%C4%B1m.%20%C4%B0htiyac%C4%B1m%3A%20">WhatsApp’tan Yaz</a>
+    </div>
+  </section>
 </main>
+
+<script>
+function sendWhatsApp(){
+  const name = document.getElementById('qName').value.trim();
+  const area = document.getElementById('qArea').value.trim();
+  const need = document.getElementById('qNeed').value.trim();
+
+  const msg =
+    `Merhaba, Avcılar'da elektrik hizmeti istiyorum.%0A` +
+    (name ? `İsim: ${encodeURIComponent(name)}%0A` : '') +
+    (area ? `Mahalle: ${encodeURIComponent(area)}%0A` : '') +
+    (need ? `İhtiyaç: ${encodeURIComponent(need)}%0A` : '');
+
+  window.open(`https://wa.me/905443627008?text=${msg}`, '_blank');
+}
+</script>
 </body>
 </html>
