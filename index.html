@@ -1,1 +1,262 @@
-<!-- initial commit -->
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>İstanbul Elektrikçi | YGT Elektrik (7/24 Acil) - Tesisat, Proje, Kamera, Yangın Alarm</title>
+  <meta name="description" content="YGT Elektrik: İstanbul'un tüm ilçelerinde 7/24 acil elektrikçi. Elektrik tesisatı, proje-taahhüt, pano işleri, topraklama, kamera sistemleri ve yangın alarm kurulumu." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="İstanbul Elektrikçi | YGT Elektrik (7/24 Acil)" />
+  <meta property="og:description" content="İstanbul geneli 7/24 acil elektrikçi. Tesisat, proje, pano, topraklama, kamera ve yangın alarm." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- LocalBusiness Schema (adres yok: areaServed ile) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "YGT Elektrik",
+    "url": "https://example.com/",
+    "telephone": "+905443627008",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "İstanbul"
+    },
+    "serviceType": [
+      "Acil Elektrikçi",
+      "Elektrik Tesisatı",
+      "Elektrik Proje ve Taahhüt",
+      "Pano İşleri",
+      "Topraklama",
+      "Kamera Sistemleri",
+      "Yangın Alarm Sistemleri"
+    ],
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">YGT</div>
+        <div>
+          <div class="brand-name">YGT Elektrik</div>
+          <div class="brand-sub">İstanbul Geneli • 7/24 Acil Elektrik</div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#ilceler">İlçeler</a>
+        <a href="#neden">Neden Biz?</a>
+        <a href="#iletisim" class="btn btn-outline">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">İstanbul • 7/24 Acil Servis</span>
+          <h1>İstanbul Elektrikçi <span class="muted">| YGT Elektrik</span></h1>
+          <p class="lead">
+            İstanbul’un tüm ilçelerinde <strong>elektrik arıza</strong>, <strong>tesisat</strong>, <strong>proje & taahhüt</strong>,
+            <strong>pano işleri</strong>, <strong>topraklama</strong>, <strong>kamera sistemleri</strong> ve
+            <strong>yangın alarm</strong> kurulum hizmetleri.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+905443627008">Hemen Ara: 0544 362 70 08</a>
+            <a class="btn btn-whatsapp" target="_blank" rel="noopener"
+               href="https://wa.me/905443627008?text=Merhaba%2C%20%C4%B0stanbul%20geneli%207%2F24%20acil%20elektrik%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.">
+              WhatsApp’tan Yaz
+            </a>
+          </div>
+
+          <div class="trust">
+            <div class="trust-item">
+              <div class="trust-title">7/24 Acil Elektrik</div>
+              <div class="trust-text">Gece-gündüz hızlı dönüş</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title">İstanbul Tüm İlçeler</div>
+              <div class="trust-text">Geniş hizmet ağı</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title">Uzman Kadro</div>
+              <div class="trust-text">Temiz işçilik, doğru çözüm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Hızlı Teklif / Keşif</h2>
+          <p class="small">
+            Adres göstermiyoruz; İstanbul geneli hizmet veriyoruz. İhtiyacını yaz, hemen dönüş yapalım.
+          </p>
+
+          <form class="form" onsubmit="return false;">
+            <label>
+              İsim
+              <input type="text" placeholder="Ad Soyad" />
+            </label>
+            <label>
+              İlçe
+              <input type="text" placeholder="Örn: Beşiktaş, Kadıköy..." />
+            </label>
+            <label>
+              İhtiyaç
+              <textarea rows="4" placeholder="Arıza / tesisat / pano / kamera / yangın alarm..."></textarea>
+            </label>
+
+            <button class="btn btn-primary" id="whatsAppSend">WhatsApp’a Gönder</button>
+            <p class="tiny muted">
+              Butona basınca WhatsApp mesajı hazırlanır.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="hizmetler" class="section">
+      <div class="container">
+        <h2>Hizmetlerimiz</h2>
+        <p class="section-lead">
+          Elektrikle ilgili tüm işlerde, projeden uygulamaya kadar çözüm sunuyoruz.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Elektrik Arıza (7/24)</h3>
+            <p>Sigorta atması, kaçak akım, priz-anahtar sorunları, kısa devre ve acil müdahale.</p>
+          </article>
+          <article class="card">
+            <h3>Elektrik Tesisatı & Tadilat</h3>
+            <p>Daire, ofis, mağaza ve iş yerlerinde yenileme, hat çekimi, aydınlatma ve altyapı.</p>
+          </article>
+          <article class="card">
+            <h3>Proje & Taahhüt</h3>
+            <p>Keşif, projelendirme, malzeme/işçilik planı ve yönetmeliklere uygun uygulama.</p>
+          </article>
+          <article class="card">
+            <h3>Pano İşleri</h3>
+            <p>Pano düzenleme, sigorta/şalter değişimi, kaçak akım rölesi, kompanzasyon destekli çözümler.</p>
+          </article>
+          <article class="card">
+            <h3>Topraklama</h3>
+            <p>Topraklama altyapısı, ölçüm/iyileştirme ve güvenli elektrik kullanımı için düzenlemeler.</p>
+          </article>
+          <article class="card">
+            <h3>Kamera & Yangın Alarm</h3>
+            <p>CCTV/IP kamera, kayıt ve uzaktan izleme; yangın alarm (dedektör, siren, santral) kurulumları.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ilceler" class="section alt">
+      <div class="container">
+        <h2>İstanbul’un Tüm İlçelerinde Hizmet</h2>
+        <p class="section-lead">
+          İlçe bazlı aramalarda daha iyi görünmek için bu ilçelere özel sayfalar da ekleyeceğiz.
+          Şimdilik İstanbul genelinde 7/24 hizmet veriyoruz.
+        </p>
+
+        <div class="pill-grid">
+          <!-- 39 ilçe -->
+          <span class="pill">Adalar</span><span class="pill">Arnavutköy</span><span class="pill">Ataşehir</span><span class="pill">Avcılar</span>
+          <span class="pill">Bağcılar</span><span class="pill">Bahçelievler</span><span class="pill">Bakırköy</span><span class="pill">Başakşehir</span>
+          <span class="pill">Bayrampaşa</span><span class="pill">Beşiktaş</span><span class="pill">Beykoz</span><span class="pill">Beylikdüzü</span>
+          <span class="pill">Beyoğlu</span><span class="pill">Büyükçekmece</span><span class="pill">Çatalca</span><span class="pill">Çekmeköy</span>
+          <span class="pill">Esenler</span><span class="pill">Esenyurt</span><span class="pill">Eyüpsultan</span><span class="pill">Fatih</span>
+          <span class="pill">Gaziosmanpaşa</span><span class="pill">Güngören</span><span class="pill">Kadıköy</span><span class="pill">Kağıthane</span>
+          <span class="pill">Kartal</span><span class="pill">Küçükçekmece</span><span class="pill">Maltepe</span><span class="pill">Pendik</span>
+          <span class="pill">Sancaktepe</span><span class="pill">Sarıyer</span><span class="pill">Silivri</span><span class="pill">Sultanbeyli</span>
+          <span class="pill">Sultangazi</span><span class="pill">Şile</span><span class="pill">Şişli</span><span class="pill">Tuzla</span>
+          <span class="pill">Ümraniye</span><span class="pill">Üsküdar</span><span class="pill">Zeytinburnu</span>
+        </div>
+
+        <div class="note">
+          <strong>Not:</strong> Google’da her ilçede çıkmak için her ilçeye özel, benzersiz içerikli sayfalar oluşturmak en etkili yöntemdir.
+          Akşam benden istersen otomatik “ilçe sayfaları” paketini de hazırlayıp ekleriz.
+        </div>
+      </div>
+    </section>
+
+    <section id="neden" class="section">
+      <div class="container">
+        <h2>Neden YGT Elektrik?</h2>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Temiz işçilik, doğru çözüm</h3>
+            <p>İş güvenliği ve yönetmeliklere uygun, düzenli ve sağlam uygulama hedefleriz.</p>
+          </div>
+          <div class="panel">
+            <h3>Hızlı dönüş</h3>
+            <p>7/24 acil ihtiyaçlarda hızlı iletişim ve net fiyatlandırma ile ilerleriz.</p>
+          </div>
+          <div class="panel">
+            <h3>Elektrikle ilgili her iş</h3>
+            <p>Arızadan projeye, kameradan yangın alarma kadar uçtan uca hizmet.</p>
+          </div>
+          <div class="panel">
+            <h3>İstanbul geneli</h3>
+            <p>Adres göstermeden İstanbul’un tüm ilçelerinde hizmet veriyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section alt">
+      <div class="container">
+        <h2>İletişim</h2>
+        <p class="section-lead">Hemen arayın veya WhatsApp’tan yazın. İstanbul geneli 7/24 acil elektrik hizmeti.</p>
+
+        <div class="contact">
+          <a class="btn btn-primary" href="tel:+905443627008">Ara: 0544 362 70 08</a>
+          <a class="btn btn-whatsapp" target="_blank" rel="noopener"
+             href="https://wa.me/905443627008?text=Merhaba%2C%20%C4%B0stanbul%20geneli%207%2F24%20acil%20elektrik%20hizmeti%20i%C3%A7in%20fiyat%20ve%20m%C3%BCsaitlik%20bilgisi%20alabilir%20miyim%3F">
+            WhatsApp’tan Yaz
+          </a>
+        </div>
+
+        <div class="footerline">
+          <span>© <span id="year"></span> YGT Elektrik</span>
+          <span>İstanbul Geneli • 7/24</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Quick WhatsApp send (from form)
+    document.getElementById("whatsAppSend").addEventListener("click", () => {
+      const name = document.querySelector('input[placeholder="Ad Soyad"]').value.trim();
+      const ilce = document.querySelector('input[placeholder="Örn: Beşiktaş, Kadıköy..."]').value.trim();
+      const need = document.querySelector('textarea').value.trim();
+
+      const base = "Merhaba, YGT Elektrik ile iletişime geçiyorum.";
+      const parts = [
+        name ? `İsim: ${name}` : "",
+        ilce ? `İlçe: ${ilce}` : "",
+        need ? `İhtiyaç: ${need}` : ""
+      ].filter(Boolean);
+
+      const msg = encodeURIComponent([base, ...parts].join("\n"));
+      window.open(`https://wa.me/905443627008?text=${msg}`, "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
